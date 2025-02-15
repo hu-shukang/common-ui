@@ -1,11 +1,7 @@
-<script setup lang="ts">
-import MyButton from './components/MyButton.vue';
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
-    <MyButton>
-      <span>Click me!</span>
-    </MyButton>
+    <el-button class="custom-btn">Click me</el-button>
   </div>
 </template>

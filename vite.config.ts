@@ -54,11 +54,10 @@ export default defineConfig({
     },
     rollupOptions: {
       // 将 Vue 设为外部依赖，避免打包到库中
-      external: ['vue', 'element-plus'],
+      external: ['vue'],
       output: {
         globals: {
           vue: 'Vue',
-          'element-plus': 'ElementPlus',
         },
       },
     },

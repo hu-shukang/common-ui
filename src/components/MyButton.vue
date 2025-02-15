@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineOptions({
+  name: 'my-button',
+});
+</script>
 
 <template>
-  <el-button size="large" class="custom-btn">
+  <div>
     <slot></slot>
-  </el-button>
+  </div>
 </template>
