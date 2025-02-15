@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "declaration": true, // 启用生成声明文件
+    "declarationMap": true, // 为声明文件生成 Source Map
+    "emitDeclarationOnly": true, // 仅生成声明文件，不生成 JS 文件
+    "outDir": "./dist", // 输出目录
+    "module": "ESNext", // 模块类型与 Vite 一致
+    "target": "ES2022", // 目标 ECMAScript 版本
+    "strict": true, // 启用严格模式
+    "skipLibCheck": true // 跳过库检查以提升速度
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue"], // 包括 TS 和 Vue 文件
+  "exclude": ["node_modules", "dist", "src/App.vue", "src/main.ts"] // 排除不需要的内容
+}
